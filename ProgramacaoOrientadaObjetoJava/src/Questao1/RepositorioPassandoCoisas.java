@@ -1,9 +1,9 @@
-package Questão1;
+package Questao1;
 
 public class RepositorioPassandoCoisas {
 	public static void main(String [] args) {
 		Repositorio<String> RepositorioString = new Repositorio<String>();
-		RepositorioString.add("José da Silva");
+		RepositorioString.add("Josï¿½ da Silva");
 		
 		Repositorio<Integer> RepositorioInteger = new Repositorio<Integer>();
 		RepositorioInteger.add(new Integer(20));

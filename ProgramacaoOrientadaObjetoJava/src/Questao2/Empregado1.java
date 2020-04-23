@@ -1,4 +1,4 @@
-package Questão2;
+package Questao2;
 
 public class Empregado1 extends Empregado {
 

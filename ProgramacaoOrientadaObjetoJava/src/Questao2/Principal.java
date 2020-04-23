@@ -1,4 +1,4 @@
-package Questão2;
+package Questao2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class Principal {
 
 	public static void main(String[] args) {
-		UtilEmpregado<Empregado1> empregado1 = new UtilEmpregado<Empregado1>(new Empregado1("José", 8500));
+		UtilEmpregado<Empregado1> empregado1 = new UtilEmpregado<Empregado1>(new Empregado1("Josï¿½", 8500));
 		System.out.println(empregado1.getEmpregado().getNome() + " " + empregado1.getEmpregado().getSalario());
 
 		UtilEmpregado<Empregado2> empregado2 = new UtilEmpregado<Empregado2>(new Empregado2("Maria", 10000));

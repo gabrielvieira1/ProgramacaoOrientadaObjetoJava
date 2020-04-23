@@ -1,4 +1,4 @@
-package escopoDasDeclarações;
+package escopoDasDeclaracoes;
 
 public class Scope {
 	private static int x = 1;

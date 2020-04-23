@@ -1,4 +1,4 @@
-package Questão1;
+package Questao1;
 
 public class Repositorio <T> {
 	private T objeto;

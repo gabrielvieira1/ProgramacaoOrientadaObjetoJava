@@ -1,4 +1,4 @@
-package Questão2;
+package Questao2;
 
 import java.util.List;
 
