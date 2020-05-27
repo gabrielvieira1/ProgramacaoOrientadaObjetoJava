@@ -1,5 +1,6 @@
 package MapHashMap;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -8,15 +9,28 @@ import java.util.Set;
 public class MapSimples {
 	
 	public static void main(String[] args) {
-		Map<Object, String> mapAnimals = new HashMap<Object, String>();
+		Map<Object, ArrayList> mapAnimals = new HashMap<Object, ArrayList>();
+		ArrayList<String> obj = new ArrayList<String>(); 
+		ArrayList<String> obj2 = new ArrayList<String>(); 
 		
-		mapAnimals.put(new Integer(2), "Coelho"); 
+		obj.add("Melyssa");
+		obj.add("Gabriel");
+		obj.add("Thiago");
+		
+		obj2.add("Pedro");
+		
+		mapAnimals.put(new Integer(1), obj);
+		//mapAnimals.put(new Integer(2), obj2);
+		mapAnimals.put(2, obj2);
+		
+	/*	mapAnimals.put(new Integer(2), "Coelho"); 
 		mapAnimals.put(new Integer(1), "Bode"); 
 		mapAnimals.put(new Integer(3), "Cachorro"); 
 		mapAnimals.put(new Integer(5), "Gato"); 
-		mapAnimals.put(new Integer(4), "Vaca"); 
+		mapAnimals.put(new Integer(4), "Vaca"); */
 		
 		System.out.println(mapAnimals);
+		
 		
 		System.out.println(mapAnimals.get(3));
 		
@@ -31,7 +45,7 @@ public class MapSimples {
 //			System.out.println("Key: " + key + " value: " + value);
 //		}
 		
-		for(Map.Entry<Object, String> entry : mapAnimals.entrySet()) {
+		for(Map.Entry<Object, ArrayList> entry : mapAnimals.entrySet()) {
 			System.out.println("Key: " + entry.getKey() + " value: " + entry.getValue());
 		}
 		
