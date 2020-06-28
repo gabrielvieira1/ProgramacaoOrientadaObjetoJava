@@ -12,7 +12,7 @@ import java.util.HashMap;
 public class Arquivo<T> extends RegistroPessoas{
 	T objet;
 	
-	File arquivoAssinaturas = new File("assinaturas.txt");
+	File arquivoAssinaturas = new File("\\src\\lista16poo\\assinaturas.txt");
 	Map<Object, Object> objeto = new HashMap<Object, Object>();
 	
 	public Arquivo(RegistroPessoas registroPessoas) {

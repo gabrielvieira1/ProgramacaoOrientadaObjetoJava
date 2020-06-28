@@ -1,13 +1,14 @@
 package lista16poo;
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 public class Principal<T> {
 	static Scanner scan = new Scanner(System.in);
 	static RegistroPessoas regPessoas = new RegistroPessoas();
-	Arquivo<RegistroPessoas> arquivo = new Arquivo<RegistroPessoas>(new RegistroPessoas());
+	static Arquivo<RegistroPessoas> arquivo = new Arquivo<RegistroPessoas>(new RegistroPessoas());
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		int opcao = 0;
 		try {
 			do {
@@ -24,7 +25,7 @@ public class Principal<T> {
 		}
 			
 	}
-	public static void menu() {
+	public static void menu() throws IOException, ClassNotFoundException {
 		int escolha;
 		System.out.println("1 Assinar livro: ");
 		System.out.println("2 Listar Assinaturas");
@@ -36,9 +37,9 @@ public class Principal<T> {
 		} else if (escolha == 2 ) {
 			listarAssinaturas();
 		} else if (escolha == 3) {
-			
+			arquivo.gravarLista(regPessoas.listaMap);
 		} else if (escolha == 4){
-			
+			System.out.println(arquivo.retornaLista());
 		}
 	}
 	public static void adicionarAssinatura() {

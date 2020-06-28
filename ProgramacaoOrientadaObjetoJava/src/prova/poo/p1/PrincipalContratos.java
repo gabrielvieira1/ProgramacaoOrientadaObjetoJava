@@ -9,7 +9,5 @@ public class PrincipalContratos {
 		Contratos.PessoaFisica pF = contrato.new PessoaFisica("José");
 		pF.imprimir();
 		pJ.imprimir();
-		
 	}
-
 }

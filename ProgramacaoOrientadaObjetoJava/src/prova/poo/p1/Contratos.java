@@ -1,6 +1,6 @@
 package prova.poo.p1;
 
-public class Contratos {
+public class Contratos { //externa
 	String contrato;
 	int numero;
 	Contratos(String contrato, int numero){
@@ -9,7 +9,7 @@ public class Contratos {
 		System.out.println(contrato);
 	}
 	
-	class PessoaFisica{
+	class PessoaFisica{ //interna aninhada
 		String nome;
 		public PessoaFisica(String nome) {
 			this.nome = nome;
@@ -18,7 +18,7 @@ public class Contratos {
 			System.out.println(contrato + ": PF, nº:" + numero + " em nome de: " + nome);
 		}
 	}
-	class PessoaJuridica{
+	class PessoaJuridica{ //interna aninhada
 		String razaoSocial;
 		public PessoaJuridica(String razaoSocial) {
 			this.razaoSocial = razaoSocial;

@@ -10,5 +10,7 @@ public class Mercadoria implements Comparable<Mercadoria> {
 		return m.tamanho;
 	}
 	
-
+	public String toString() {
+		return "Elementos: " + tamanho;
+	}
 }
