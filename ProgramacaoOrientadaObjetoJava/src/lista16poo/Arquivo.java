@@ -11,8 +11,8 @@ import java.util.HashMap;
 
 public class Arquivo<T> extends RegistroPessoas{
 	T objet;
-	
-	File arquivoAssinaturas = new File("\\src\\lista16poo\\assinaturas.txt");
+	// O caminho no linux não tem "//" 
+	File arquivoAssinaturas = new File("/media/gabriel/NOVO/Eclipse/git/ProgramacaoOrientadaObjetoJava/ProgramacaoOrientadaObjetoJava/src/lista16poo/assinaturas.txt");
 	Map<Object, Object> objeto = new HashMap<Object, Object>();
 	
 	public Arquivo(RegistroPessoas registroPessoas) {

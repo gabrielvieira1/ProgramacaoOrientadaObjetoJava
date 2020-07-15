@@ -21,7 +21,7 @@ public class Principal<T> {
 			} while (opcao == 1);
 			
 		} catch (NullPointerException e) {
-			System.out.println("Não tem nada");
+			System.out.println("Nao tem nada");
 		}
 			
 	}
